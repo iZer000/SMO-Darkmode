@@ -1,7 +1,13 @@
+<a href="https://discord.gg/unfBEn32QE">
+<img src="https://img.shields.io/badge/Discord-Gaudi%20Land-blue?style=flat-square&logo=discord&color=5865F2&logoColor=5865F2&labelColor=23272A">
+</a>
+
 ## SMO-Darkmode
-Darkmode für schulmanager-online.de. Natürlich in Pink!!!
+#### Darkmode für schulmanager-online.de. Natürlich in Pink!!!
 
 Der Code ist recht unaufgeräumt und an einigen Stellen noch nicht ganz fertig. Wer zu viel Freizeit hat, kann sich gern im "Pull requests"-Tab austoben. :)
+
+> Schau auch mal bei meinen [SMO-Notizen](https://github.com/iZer000/SMO-Notizen) vorbei.
 
 ## Installation
 1. [Stylus](https://github.com/openstyles/stylus) installieren.
