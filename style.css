@@ -1,6 +1,6 @@
 :root {
     color-scheme: light dark;
-    
+
     --background: #1E1F20;
     --insidefields: #232425;
     --cards: #28292A;
@@ -9,57 +9,52 @@
     --border: #858585;
     --darktext: #D5D6D7;
     --text: #fff;
-    
+
     --pink: #c51f5d;
     --pinkdark: #9d184a;
-    --pinkdarktransparent: #9d184a6e
-}
+    --pinkdarktransparent: #9d184a6e }
+
 body {
     background: var(--background);
-    color: var(--text);
-}
+    color: var(--text); }
 
 a {
-    color: var(--pink);
-}
+    color: var(--pink); }
 
 
-*::selection, *::-moz-selection {
-  background: var(--pinkdark) !important;
-}
+*::selection,
+*::-moz-selection {
+    background: var(--pinkdark) !important; }
 
 iframe {
     border: 3px solid var(--pinkdark);
     border-radius: 8px;
-    box-shadow: 2px 3px 6px var(--background);
-}
+    box-shadow: 2px 3px 6px var(--background); }
 
 a:hover {
-    color: var(--pinkdark);
-}
+    color: var(--pinkdark); }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--pink);
-    font-weight: bold;
-}
+    font-weight: bold; }
 
 
 h4 {
-    color: var(--darktext);
-}
+    color: var(--darktext); }
 
 body > div.loader {
     border-left: 1.1em solid var(--pink);
     border-top: 1.1em solid var(--darkpink);
     border-right: 1.1em solid var(--darkpink);
-    border-bottom: 1.1em solid var(--darkpink);
-}
+    border-bottom: 1.1em solid var(--darkpink); }
+
 body > img {
-    display: none;
-}
+    display: none; }
 
 
-button, .btn {
+button,
+.btn {
     border: 3px solid var(--pink) !important;
     padding: 3px 12px !important;
     color: var(--text) !important;
@@ -67,252 +62,259 @@ button, .btn {
     height: 100% !important;
     background-color: var(--pink) !important;
     text-decoration: none !important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
     border: 3px solid var(--pink) !important;
     background-color: var(--pinkdark) !important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out }
 
-button:disabled, .btn:disabled, button:disabled:hover, .btn:disabled:hover {
+button:disabled,
+.btn:disabled,
+button:disabled:hover,
+.btn:disabled:hover {
     background-color: var(--pinkdark) !important;
     border: 3px solid var(--pinkdark) !important;
-    cursor: default;
-}
+    cursor: default; }
 
-input, textarea {
+input,
+textarea {
     border: 1px solid var(--border);
-    border-radius: 3px;
-}
+    border-radius: 3px; }
 
-input:hover, textarea:hover {
-    -webkit-filter: brightness(110%);
-}
+input:hover,
+textarea:hover {
+    -webkit-filter: brightness(110%); }
 
-input:focus, textarea:focus {
-    border-color: var(--pink);
-}
+input:focus,
+textarea:focus {
+    border-color: var(--pink); }
 
-input[ng-model].ng-touched.ng-invalid, textarea[ng-model].ng-touched.ng-invalid, wysiwyg-input.fake-form-control [ng-model].ng-touched.ng-invalid.mce-content-body, select[ng-model].ng-touched.ng-invalid,
-form.submit-hovered input[ng-model].ng-invalid, form.submit-hovered textarea[ng-model].ng-invalid, form.submit-hovered wysiwyg-input.fake-form-control [ng-model].ng-invalid.mce-content-body, wysiwyg-input.fake-form-control form.submit-hovered [ng-model].ng-invalid.mce-content-body, form.submit-hovered select[ng-model].ng-invalid {
-    background: var(--insidefields);
-}
+input[ng-model].ng-touched.ng-invalid,
+textarea[ng-model].ng-touched.ng-invalid,
+wysiwyg-input.fake-form-control [ng-model].ng-touched.ng-invalid.mce-content-body,
+select[ng-model].ng-touched.ng-invalid,
+form.submit-hovered input[ng-model].ng-invalid,
+form.submit-hovered textarea[ng-model].ng-invalid,
+form.submit-hovered wysiwyg-input.fake-form-control [ng-model].ng-invalid.mce-content-body,
+wysiwyg-input.fake-form-control form.submit-hovered [ng-model].ng-invalid.mce-content-body,
+form.submit-hovered select[ng-model].ng-invalid {
+    background: var(--insidefields); }
 
-.tile>.tile-header, .modal-content .modal-header {
+.tile > .tile-header,
+.modal-content .modal-header {
     background: var(--insidecards);
-    color: var(--pink);
-}
+    color: var(--pink); }
 
 
 /* --- BEGIN NAVBAR --- */
-
 .sm-navbar {
     background-color: var(--insidecards);
-    border-color: var(--insidecards);
-}
+    border-color: var(--insidecards); }
 
 
 body > div.container-fluid.px-0.ng-scope > navbar > div > div > div.overview-navigation.d-none.d-md-block > div > a {
-    background-color: var(--insidecards);
-}
+    background-color: var(--insidecards); }
 
 
-.sm-navbar .account-menu, .notifications-header, [notification-button] .notifications-dropdown, [messages-button] .messages-dropdown .messages-header {
+.sm-navbar .account-menu,
+.notifications-header,
+[notification-button] .notifications-dropdown,
+[messages-button] .messages-dropdown .messages-header {
     background-color: var(--pink) !important;
-    border-color: var(--pink) !important;
-}
+    border-color: var(--pink) !important; }
+
 body > div.container-fluid.px-0.ng-scope > navbar > div > div > div.overview-navigation.d-none.d-md-block > div > a:hover,
 body > div.container-fluid.px-0.ng-scope > navbar > div > div > div.overview-navigation.d-none.d-md-block > div > a:active,
-.dropdown:hover, .dropdown:active, .dropdown-toggle:hover, .dropdown-toggle:active, .sm-navbar .right-navigation>li.show>a,
+.dropdown:hover,
+.dropdown:active,
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.sm-navbar .right-navigation > li.show > a,
 [messages-button] .messages-dropdown {
     background-color: var(--pinkdark) !important;
-    border-color: var(--pinkdark) !important;
-}
+    border-color: var(--pinkdark) !important; }
 
-.notifications-list > a, .subscriptions-list > a {
+.notifications-list > a,
+.subscriptions-list > a {
     color: var(--pink) !important;
-    background-color: var(--cards);
-}
-.notifications-list > a:hover, .subscriptions-list > a:hover {
+    background-color: var(--cards); }
+
+.notifications-list > a:hover,
+.subscriptions-list > a:hover {
     color: var(--darktext) !important;
-    background-color: var(--pinkdark) !important;
-}
+    background-color: var(--pinkdark) !important; }
 
 .sm-navbar .overview-navigation .dropdown .module-overview {
     background: var(--pink);
-    border-color: var(--pinkdark);
-}
-.sm-navbar .overview-navigation .dropdown .module-overview>div .module-label:hover, .sm-navbar .overview-navigation .dropdown .module-overview>div .module-label.active, .sm-navbar .account-menu>a:hover {
-    background: var(--pinkdark);
-}
+    border-color: var(--pinkdark); }
+
+.sm-navbar .overview-navigation .dropdown .module-overview > div .module-label:hover,
+.sm-navbar .overview-navigation .dropdown .module-overview > div .module-label.active,
+.sm-navbar .account-menu > a:hover {
+    background: var(--pinkdark); }
 
 .modal-content {
-    background: var(--cards);
-}
+    background: var(--cards); }
 
 /* --- END NAVBAR --- */
-
 footer {
-    display: none;
-}
+    display: none; }
 
 .table,
-.card, .tile {
+.card,
+.tile {
     background: var(--cards);
-    color: var(--text);
-}
+    color: var(--text); }
 
-td, td[colspan="2"] {
-    background: var(--insidefields);
-}
-.table-bordered, td, th, .table-bordered th, .table-bordered td {
-    border: 1px solid var(--darkborder);
-}
+td,
+td[colspan="2"] {
+    background: var(--insidefields); }
+
+.table-bordered,
+td,
+th,
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid var(--darkborder); }
 
 .fc-today {
-    color: var(--pink);
-}
+    color: var(--pink); }
+
 .event-category-selection label {
-    color: var(--darktext) !important;
-}
+    color: var(--darktext) !important; }
 
 /* --- BEGIN KLASSENBUCH --- */
+.sm-navbar .overview-navigation .view-tabs > li:hover > a,
+.sm-navbar .overview-navigation .view-tabs > li.active > a,
+.nice-tabs > li.active:not(.disabled) a,
+.nice-tabs > li.active:not(.disabled) a:hover,
+.nice-tabs > li.active:not(.disabled) a:focus,
+.nice-tabs > li:hover:not(.disabled) a,
+.nice-tabs > li:hover:not(.disabled) a:hover,
+.nice-tabs > li:hover:not(.disabled) a:focus,
+.nice-tabs > li:focus:not(.disabled) a,
+.nice-tabs > li:focus:not(.disabled) a:hover,
+.nice-tabs > li:focus:not(.disabled) a:focus {
+    background: var(--pinkdark) !important; }
 
-.sm-navbar .overview-navigation .view-tabs>li:hover>a, .sm-navbar .overview-navigation .view-tabs>li.active>a, .nice-tabs>li.active:not(.disabled) a, .nice-tabs>li.active:not(.disabled) a:hover, .nice-tabs>li.active:not(.disabled) a:focus, .nice-tabs>li:hover:not(.disabled) a, .nice-tabs>li:hover:not(.disabled) a:hover, .nice-tabs>li:hover:not(.disabled) a:focus, .nice-tabs>li:focus:not(.disabled) a, .nice-tabs>li:focus:not(.disabled) a:hover, .nice-tabs>li:focus:not(.disabled) a:focus {
-    background: var(--pinkdark) !important;
-}
+.sm-navbar .overview-navigation .view-tabs,
+.sm-navbar .overview-navigation .view-tabs > li,
+.nice-tabs,
+.nice-tabs > li:not(:first-child) {
+    border-color: var(--pinkdark); }
 
-.sm-navbar .overview-navigation .view-tabs, .sm-navbar .overview-navigation .view-tabs>li, .nice-tabs, .nice-tabs>li:not(:first-child) {
-    border-color: var(--pinkdark);
-}
-
-.nice-tabs>li>a {
-    color: var(--pinkdark);
-}
+.nice-tabs > li > a {
+    color: var(--pinkdark); }
 
 
 
-.form-control, wysiwyg-input.fake-form-control .mce-content-body, class-hour-calendar .week-navigation .calendar-week-column .calendar-week .calendar-week-selection {
+.form-control,
+wysiwyg-input.fake-form-control .mce-content-body,
+class-hour-calendar .week-navigation .calendar-week-column .calendar-week .calendar-week-selection {
     border: 1px solid var(--border);
     border-radius: 3px;
     color: var(--darktext);
-    background: var(--insidefields);
-    
-}
-.form-control:focus, wysiwyg-input.fake-form-control:focus .mce-content-body:focus, class-hour-calendar .week-navigation .calendar-week-column .calendar-week .calendar-week-selection:focus {
+    background: var(--insidefields); }
+
+.form-control:focus,
+wysiwyg-input.fake-form-control:focus .mce-content-body:focus,
+class-hour-calendar .week-navigation .calendar-week-column .calendar-week .calendar-week-selection:focus {
     border: 1px solid var(--pink);
     background: var(--insidefields);
-    color: var(--darktext);
-}
+    color: var(--darktext); }
 
 class-hour-calendar table.calendar-table tr td * {
-    text-shadow: 1px 1px 6px black;
-}
+    text-shadow: 1px 1px 6px black; }
 
 
 
 
 
 /* --- END KLASSENBUCH --- */
-
-body > div.container-fluid.px-0.ng-scope > div > ui-view > ui-view > div.card.ng-scope > class-hour-calendar > table > tbody > tr > td > div > div > div > *, body > div.container-fluid.px-0.ng-scope > div > ui-view > ui-view > div.card.ng-scope > class-hour-calendar > table > tbody > tr > td > div > div > div > span.fa.fa-info-circle.substitution-comment::before {
-    color: var(--text);
-}
+body > div.container-fluid.px-0.ng-scope > div > ui-view > ui-view > div.card.ng-scope > class-hour-calendar > table > tbody > tr > td > div > div > div > *,
+body > div.container-fluid.px-0.ng-scope > div > ui-view > ui-view > div.card.ng-scope > class-hour-calendar > table > tbody > tr > td > div > div > div > span.fa.fa-info-circle.substitution-comment::before {
+    color: var(--text); }
 
 
 
 .student-learning-course-select-parent .student-learning-course-select {
     background: var(--cards) !important;
-    border: none;
-}
+    border: none; }
 
 
 .student-learning-course-select-parent .new-indicator {
-    background: var(--pink);
-}
+    background: var(--pink); }
 
 a.learning-unit-line:not(.done) {
-    background: var(--pink);
-}
+    background: var(--pink); }
 
 a.learning-unit-line:not(.done):hover {
     background: var(--pink);
-    -webkit-filter: brightness(90%);
-}
+    -webkit-filter: brightness(90%); }
 
 
-a.learning-unit-line.done, a.learning-unit-line.done .date {
+a.learning-unit-line.done,
+a.learning-unit-line.done .date {
     color: var(--pink);
-    background: var(--cards);
-}
+    background: var(--cards); }
 
 a.learning-unit-line.done:hover {
     background: var(--cards);
-    -webkit-filter: brightness(90%);
-}
+    -webkit-filter: brightness(90%); }
 
 body > div.container-fluid.px-0.ng-scope > div > ui-view > ui-view > ui-view > ui-view > div > div > div > div.tile-body > view-unit-item > div > div.ng-scope > table > tbody > tr > td > div {
-    margin: 5px;
-}
+    margin: 5px; }
 
-.tile.thread-messages-tile>.tile-body .messages-container {
-    background: var(--cards);
-}
+.tile.thread-messages-tile > .tile-body .messages-container {
+    background: var(--cards); }
 
-.tile.thread-messages-tile>.tile-body .messages-container .messages .message.own .bubble, .tile.thread-messages-tile>.tile-body .messages-container .messages .message.other .bubble {
+.tile.thread-messages-tile > .tile-body .messages-container .messages .message.own .bubble,
+.tile.thread-messages-tile > .tile-body .messages-container .messages .message.other .bubble {
     background: var(--insidefields);
-    box-shadow: none;
-}
+    box-shadow: none; }
 
-.tile.thread-messages-tile>.tile-body .messages-container .messages .message .day-indicator {
-    background: var(--pinkdark)
-}
+.tile.thread-messages-tile > .tile-body .messages-container .messages .message .day-indicator {
+    background: var(--pinkdark) }
 
-.tile.thread-messages-tile>.tile-body .messages-container .messages .message .bubble .message-username {
-    color: var(--pink);
-}
+.tile.thread-messages-tile > .tile-body .messages-container .messages .message .bubble .message-username {
+    color: var(--pink); }
 
 .thread-list .thread-list-item .subscription-name {
-    color: var(--text);
-}
+    color: var(--text); }
 
 .thread-list .thread-list-item .subscription-last-message {
-    color: var(--darktext);
-}
-.thread-list .thread-list-item:hover, .thread-list .thread-list-item.active {
-    background: var(--insidecards);
-}
-.tile.thread-messages-tile>.tile-body .compose-message {
+    color: var(--darktext); }
+
+.thread-list .thread-list-item:hover,
+.thread-list .thread-list-item.active {
+    background: var(--insidecards); }
+
+.tile.thread-messages-tile > .tile-body .compose-message {
     border: none;
-    background: none;
-}
+    background: none; }
 
 .table-hover tbody tr:hover {
-    color: var(--pink);
-}
+    color: var(--pink); }
 
 .modal-content {
-    border-radius: 12px;
-}
-.modal-content .modal-header {
-    border-radius: 12px 12px 0 0;
-}
+    border-radius: 12px; }
 
-.popover, .popover-header {
+.modal-content .modal-header {
+    border-radius: 12px 12px 0 0; }
+
+.popover,
+.popover-header {
     background-color: var(--pink) !important;
-    border-color: var(--pink);
-}
+    border-color: var(--pink); }
 
 .popover-body {
     background: var(--insidefields);
-    color: var(--text);
-}
-.bs-popover-top>.arrow::after {
-    border-top-color: var(--pinkdark);
-}
+    color: var(--text); }
+
+.bs-popover-top > .arrow::after {
+    border-top-color: var(--pinkdark); }
 
 .student-exam-calendar .exam-cell .exam {
-    background: var(--pinkdarktransparent);
-}
+    background: var(--pinkdarktransparent); }
