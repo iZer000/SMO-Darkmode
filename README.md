@@ -16,6 +16,9 @@ Der Code ist recht unaufgeräumt und an einigen Stellen noch nicht ganz fertig. 
 4. Bereich "login.schulmanager-online.de" festlegen
 
 
+## Bekannte Bugs
+- [ ] Die Buttons "Senden" und "Anhang hinzufügen" funktionieren nicht. (--> `STRG + Enter` zum Senden)
+
 ## Vorschau
 ![Bild 1](https://user-images.githubusercontent.com/77457719/161331952-0badd126-f613-4d23-9b75-ee4c6399c268.png)
 
